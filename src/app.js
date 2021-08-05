@@ -61,6 +61,8 @@ app.get('/weather', (req, res) => {
                 forecast: forecastData.description,
                 temp: forecastData.temperature,
                 precip: forecastData.precip,
+                feelslike: forecastData.feelslike,
+                humidity: forecastData.humidity,
                 address: req.query.address
             })
         })

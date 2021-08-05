@@ -14,7 +14,9 @@ const getForecast = (latitude, longitude, callback) => {
                 location: response.body.location.name,
                 description: current.weather_descriptions[0],
                 temperature: current.temperature,
-                precip: current.precip
+                feelslike: current.feelslike,
+                precip: current.precip,
+                humidity: current.humidity
             })
         }
     })
